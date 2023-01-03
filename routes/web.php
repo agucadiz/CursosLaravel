@@ -4,7 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CursoController;
 
-Route::get('/', HomeController::class);
+Route::get('/', HomeController::class)->name('home');
+
+//Solo contenido estático, por eso se utiliza view:
+Route::view('nosotros', 'nosotros')->name('nosotros');
+
+
+//Esta ruta equivale a las 7 restantes:
+//Route::resource('cursos', CursoController::class);
 
 Route::get('cursos', [CursoController::class, 'index'])->name('cursos.index');
 
