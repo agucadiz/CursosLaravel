@@ -15,6 +15,8 @@
 <body>
     @include('layouts.partials.header')
 
+    @include('layouts.partials.dashboard')
+
     <h1>Nosotros</h1>
 </body>
 </html>
