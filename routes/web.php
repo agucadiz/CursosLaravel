@@ -12,8 +12,8 @@ Route::view('nosotros', 'nosotros')->name('nosotros');
 
 
 //Esta ruta equivale a las 7 restantes:
-//Route::resource('cursos', CursoController::class);
-
+Route::resource('cursos', CursoController::class);
+/*
 Route::get('cursos', [CursoController::class, 'index'])->name('cursos.index');
 
 Route::get('cursos/create', [CursoController::class, 'create'])->name('cursos.create');
@@ -26,7 +26,7 @@ Route::get('cursos/{curso}/edit', [CursoController::class, 'edit'])->name(('curs
 
 Route::put('cursos/{curso}', [CursoController::class, 'update'])->name(('cursos.update'));
 
-Route::delete('cursos/{curso}', [CursoController::class, 'destroy'])->name('cursos.destroy');
+Route::delete('cursos/{curso}', [CursoController::class, 'destroy'])->name('cursos.destroy'); */
 
 /*
 |--------------------------------------------------------------------------
